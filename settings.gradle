@@ -11,9 +11,11 @@ rootProject.name = "KennieAndroid"
 
 //************************演示项目 目录************************
 include ':app_example'
+include ':base_project'
 
 //************************公共库 目录************************
 include ':library'
+include ':library_res'
 
 
 
