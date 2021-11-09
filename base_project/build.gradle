@@ -13,5 +13,5 @@ dependencies {
     implementation depX.constraintlayout
     implementation depX.recyclerview
     implementation depX.swiperefreshlayout
-    implementation depX.flexbox
+    implementation project(':library_res')
 }
