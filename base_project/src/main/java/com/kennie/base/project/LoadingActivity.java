@@ -29,7 +29,7 @@ public class LoadingActivity extends AppCompatActivity {
         }
 
         if (SPUtils.getInt(Constants.IS_AGREE_PRIVATE, 0) == 0) {
-            DialogBuild.showPrivate(this, new View.OnClickListener() {
+            UserPrivacyPolicyDialog.show(this, new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     SPUtils.putInt(Constants.IS_AGREE_PRIVATE, 1);
