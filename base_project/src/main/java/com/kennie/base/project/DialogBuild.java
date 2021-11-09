@@ -35,7 +35,7 @@ public class DialogBuild {
         AppCompatTextView tv_close_app = view.findViewById(R.id.tv_close_app);
         SpannableString doubleClickTag = getDoubleClickTag(context,
                 R.color.red,
-                context.getString(R.string.common_private_info),
+                context.getString(R.string.common_private_policy_info),
                 "《隐私政策》",
                 "",
                 new OnActionListener<Integer>() {
