@@ -71,6 +71,12 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
 
+
+        <!-- yanshizidingyi -->
+        <activity
+            android:name=".ui.ExampleViewActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

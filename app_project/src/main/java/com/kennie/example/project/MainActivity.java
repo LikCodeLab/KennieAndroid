@@ -4,9 +4,12 @@ package com.kennie.example.project;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
+import android.widget.QuickContactBadge;
 import android.widget.Toast;
 
 import com.kennie.example.project.base.AppActivity;
+import com.kennie.example.project.ui.ExampleViewActivity;
 import com.kennie.library.utils.ActivityManager;
 import com.kennie.library.utils.DoubleClickHelper;
 
@@ -22,11 +25,18 @@ public class MainActivity extends AppActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.reg_layout_one;
+        return R.layout.login_layout_one;
     }
 
     @Override
     public void initView() {
+
+        findViewById(R.id.btn_login_commit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ExampleViewActivity.start(MainActivity.this);
+            }
+        });
 
     }
 
