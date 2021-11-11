@@ -1,4 +1,4 @@
-package com.kennie.base.project.core.app
+package com.kennie.library.utils.app
 
 import android.app.Application
 

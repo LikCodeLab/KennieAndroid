@@ -1,10 +1,10 @@
-package com.kennie.base.project.utils;
+package com.kennie.library.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 
-import com.kennie.base.project.core.app.App;
+import com.kennie.library.utils.app.App;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.kennie.base.project.utils;
+package com.kennie.library.utils;
 
 import android.os.SystemClock;
 

@@ -11,8 +11,6 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
-    implementation depX.constraintlayout
-
     // 动画解析库：https://github.com/airbnb/lottie-android
     // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons
     api 'com.airbnb.android:lottie:4.1.0'

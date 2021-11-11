@@ -1,6 +1,6 @@
 package com.kennie.example.project.base
 
-import com.kennie.base.project.core.app.App
+import com.kennie.library.utils.app.App
 
 class AppApplication : App() {
 

@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.kennie.base.project.core.action.ActivityAction;
 import com.kennie.base.project.core.action.HandlerAction;
-import com.kennie.base.project.core.app.BaseApp;
 
 /**
  * @author Kennie

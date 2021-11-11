@@ -11,8 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.kennie.base.project.UserPrivacyPolicyDialog;
 import com.kennie.base.project.config.Constants;
-import com.kennie.base.project.utils.SPUtils;
-import com.kennie.example.project.MainActivity;
+import com.kennie.library.utils.SPUtils;
 
 /**
  * APP

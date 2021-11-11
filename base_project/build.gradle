@@ -13,8 +13,9 @@ dependencies {
     implementation depX.constraintlayout
     implementation depX.recyclerview
     implementation depX.swiperefreshlayout
-    implementation project(':library_res')
+    api project(':library_res')
     api project(':library_views')
+    api project(':library_utils')
 
     // 腾讯 MMKV：https://github.com/Tencent/MMKV
     implementation 'com.tencent:mmkv-static:1.2.10'
