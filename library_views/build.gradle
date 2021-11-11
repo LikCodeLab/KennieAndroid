@@ -4,7 +4,7 @@ plugins {
 }
 
 apply from: "${rootDir}/configs/tools/gradle/library.gradle"
-apply from: "${rootDir}/configs/tools/publish/publish.gradle"
+//apply from: "${rootDir}/configs/tools/publish/publish.gradle"
 
 
 dependencies {
@@ -12,4 +12,8 @@ dependencies {
     implementation depX.appcompat
     implementation depX.material
     implementation depX.constraintlayout
+
+    // 动画解析库：https://github.com/airbnb/lottie-android
+    // 动画资源：https://lottiefiles.com、https://icons8.com/animated-icons
+    api 'com.airbnb.android:lottie:4.1.0'
 }

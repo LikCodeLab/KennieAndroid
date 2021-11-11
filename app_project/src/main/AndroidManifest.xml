@@ -65,6 +65,14 @@
             </intent-filter>
         </activity>
 
+        <!-- 闪屏页 -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"/>
+
     </application>
 
 </manifest>
