@@ -22,7 +22,7 @@ public class MainActivity extends AppActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.register_layout_one;
+        return R.layout.reg_layout_one;
     }
 
     @Override
