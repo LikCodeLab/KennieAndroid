@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
  <!-- 默认圆角按钮样式 -->
-    <style name="Common_ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+    <style name="App_Default_ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:paddingStart">@dimen/dp_20</item>
         <item name="android:paddingEnd">@dimen/dp_20</item>
         <item name="android:paddingTop">@dimen/dp_8</item>
@@ -13,8 +13,21 @@
         <item name="android:foreground">@null</item>
     </style>
 
+
+    <style name="App_Default_Green_ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:paddingStart">@dimen/dp_20</item>
+        <item name="android:paddingEnd">@dimen/dp_20</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/white90</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_round_green_selector</item>
+        <item name="android:foreground">@null</item>
+    </style>
+
     <!-- 直角按钮样式 -->
-    <style name="Common_RectButtonStyle" parent="Common_ButtonStyle">
+    <style name="App_Default_RectButtonStyle" parent="App_Default_ButtonStyle">
         <item name="android:paddingStart">@dimen/dp_10</item>
         <item name="android:paddingEnd">@dimen/dp_10</item>
         <item name="android:paddingTop">@dimen/dp_5</item>
@@ -37,7 +50,7 @@
     </style>
 	
 	    <!-- 边框按钮样式(默认 蓝色) -->
-    <style name="Common_ButtonBorderStyle">
+    <style name="App_Default_ButtonBorderStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/border_round_blue_selector</item>
@@ -51,6 +64,18 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">@drawable/border_text_round_blue_selector</item>
         <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <!-- 默认文本框样式 -->
+    <style name="App_Default_EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColorHint">#A4A4A4</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:paddingEnd">@dimen/dp_10</item>
     </style>
 	
 </resources>

@@ -39,9 +39,9 @@
 
 
     <!-- 通常用于按钮及修饰元素 -->
-    <color name="app_color_green">#009688</color>
+    <color name="app_default_color_green">#009688</color>
     <!-- 一般用于选中状态 -->
-    <color name="app_color_light_green">#5FB878</color>
+    <color name="app_default_color_light_green">#5FB878</color>
     <!-- 通常用于导航 -->
     <color name="app_color_black">#393D49</color>
     <!-- 比较适合一些鲜艳色系的页面 -->
