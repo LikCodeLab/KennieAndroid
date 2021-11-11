@@ -13,7 +13,7 @@ dependencies {
     implementation depX.constraintlayout
     implementation depX.recyclerview
     implementation depX.swiperefreshlayout
-    api project(':library_res')
+    api project(':res')
     api project(':library_views')
     api project(':library_utils')
 
