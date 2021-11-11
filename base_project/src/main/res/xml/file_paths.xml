@@ -8,17 +8,17 @@
     name="root_path"
     path="." />
 
-<!-- context.getExternalFilesDirs() -->
+<!-- context.getFilesDir() -->
 <files-path
     name="files_path"
     path="." />
 
-<!-- context.getExternalFilesDirs() -->
+<!-- context.getExternalStorageDirectory() -->
 <external-path
     name="external_storage_root"
     path="." />
 
-<!-- context.getFilesDir() -->
+<!-- context.getExternalFilesDir() -->
 <external-files-path
     name="external_file_path"
     path="." />
@@ -28,6 +28,7 @@
     name="cache_path"
     path="." />
 
+    <!-- context.getExternalCacheDir() -->
 <external-cache-path
     name="external_cache_path"
     path="." />

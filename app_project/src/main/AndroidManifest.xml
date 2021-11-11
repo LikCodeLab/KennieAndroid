@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.KennieAndroid">
 
+
+        <meta-data
+            android:name="MY_CHANNEL"
+            android:value="${MY_CHANNEL}" />
+
     </application>
 
 </manifest>
