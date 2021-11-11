@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dp_40">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_login_logo"
@@ -22,7 +24,6 @@
         android:layout_marginTop="@dimen/dp_20"
         android:orientation="vertical"
         app:divider="@drawable/line"
-        app:dividerPadding="@dimen/dp_40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_login_logo"
@@ -30,29 +31,31 @@
 
         <com.kennie.library.views.widget.ClearEditText
             android:id="@+id/et_login_phone"
-            style="@style/App_Default_EditTextStyle"
+            style="@style/EditText_Style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dp_40"
             android:layout_marginTop="@dimen/dp_10"
             android:hint="@string/login_phone_hint"
             android:inputType="phone"
             android:minHeight="@dimen/dp_48"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textColorHighlight="@color/app_default_text_hint"
+            android:textColorHint="@color/app_default_text_hint" />
 
 
         <com.kennie.library.views.widget.PasswordEditText
             android:id="@+id/et_login_password"
-            style="@style/App_Default_EditTextStyle"
+            style="@style/EditText_Style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dp_40"
             android:layout_marginTop="@dimen/dp_10"
             android:hint="@string/login_password_hint"
             android:inputType="textPassword"
             android:maxLength="20"
             android:minHeight="@dimen/dp_48"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textColorHighlight="@color/app_default_text_hint"
+            android:textColorHint="@color/app_default_text_hint" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -62,7 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginTop="@dimen/dp_10"
-        android:layout_marginEnd="@dimen/dp_40"
         android:background="@null"
         android:text="@string/login_forget"
         android:textColor="@color/app_default_green_primary"
@@ -74,7 +76,6 @@
         style="@style/Btn_RoundGreen_Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dp_40"
         android:layout_marginTop="@dimen/dp_30"
         android:text="@string/login_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,9 +87,9 @@
         android:id="@+id/ll_login_other"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -129,7 +130,7 @@
                 android:id="@+id/iv_login_qq"
                 android:layout_width="@dimen/dp_45"
                 android:layout_height="@dimen/dp_45"
-                android:layout_marginHorizontal="@dimen/dp_30"
+                android:layout_marginHorizontal="@dimen/dp_20"
                 android:layout_marginVertical="@dimen/dp_20"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/login_qq_ic" />
