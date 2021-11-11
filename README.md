@@ -16,16 +16,73 @@
 <img src="https://img.shields.io/badge/license-Apache-green.svg"/>
 </p>
 
+<div align="center">
 
-## 说明
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://gitee.com/kenniecode/kennie-android/blob/template/library/LICENSE)
 
-一个综合高复用性的Android项目模板
+</div>
+
+
+## 前言
+
+一个综合高复用性的Android项目
+
+## 简介
+
+[XXXXXX]() 模块基于`组件化` + `Arouter` + `MVVM` + `Jetpack` + `Rxjava` + `Retrofit` + `DataBinding` + `AOP` 等框架，该模块皆为努力打造一款优秀的 模块。
+
+如有任何疑问或者Bug，请在 github 上公开讨论[技术问题](https://github.com/kennielab/KennieAndroid/issues)
+
+**开源不易，如果喜欢的话希望给个 `Star` 或 `Fork` ^_^ ，谢谢~~**
+
+## 功能及特点
+
+- 首页、模块、模块、我的四大模块；
+
+## APP下载
+
+- [酷安下载]()
+- [GitHub下载](https://gitee.com/kenniecode/kennie-android/tree/template%2Flibrary/releases) [![](https://img.shields.io/badge/Download-apk-green.svg)](https://gitee.com/kenniecode/kennie-android/tree/template%2Flibrary/releases/app-release.apk)
+- 扫码
+
+![](./resources/download_qr_code.png)
+
+## 预览
+
+| ![](resources/screenshots/01.jpg) | ![](resources/screenshots/02.jpg) | ![](resources/screenshots/03.jpg) | ![](resources/screenshots/04.jpg) |
+| --- | --- | --- | --- |
+| ![](resources/screenshots/05.jpg) | ![](resources/screenshots/06.jpg) | ![](art/07.jpg) | ![](resources/screenshots/08.jpg) |
+| ![](resources/screenshots/01.gif) | ![](resources/screenshots/02.gif) | ![](art/03.gif) | ![](resources/screenshots/04.gif) |
+
+
+## 更新日志
+- [详细日志](./CHANGELOG.md)
+
+### 1.1.0
+
+- 【停更】描述
+- 【新增】描述
+- 【新增】描述
+- 【优化】描述
+- 【修复】描述
+
+### 1.0.0
+
+- 第一版试水
+
+## 使用的开源框架
+- [RxJava](https://github.com/ReactiveX/RxJava)
+- [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+- [Retrofit](https://github.com/square/retrofit)
+- [okhttp](https://github.com/square/okhttp)
+- [Glide](https://github.com/bumptech/glide)
 
 ## 注意事项
 
 > **使用前请查看注意事项**，当前版本仅支持AndroidX
 
-### 构建环境
+#### 构建环境
 
 > 最低支持api 21
 
@@ -44,6 +101,18 @@
 
    手机端 Android7.0 ~ Android 11.0
 
+
+## 联系方式
+- 微信：**lkweixh**
+- 邮箱：245794335@qq.com
+
+## 赞赏
+
+**如果您觉得还不错，您可以打赏哦，您的支持将是我持续维护的动力。**
+
+| 支付宝 | 微信支付 |
+|--|--|
+| ![NORMAL](../resources/pay/支付宝支付.png) |  ![SMOOTH](../resources/pay/微信支付.png) |
 
 ## 感谢
 
