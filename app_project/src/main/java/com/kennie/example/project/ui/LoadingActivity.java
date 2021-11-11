@@ -1,4 +1,4 @@
-package com.kennie.base.project;
+package com.kennie.example.project.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.kennie.base.project.UserPrivacyPolicyDialog;
 import com.kennie.base.project.config.Constants;
 import com.kennie.base.project.utils.SPUtils;
 
@@ -34,7 +35,7 @@ public class LoadingActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     SPUtils.putInt(Constants.IS_AGREE_PRIVATE, 1);
                     //startActivity(new Intent(LoadingActivity.this, MainActivity.class));
-                    overridePendingTransition(R.anim.screen_zoom_in, R.anim.screen_zoom_out);
+                    overridePendingTransition(com.kennie.base.project.R.anim.screen_zoom_in, com.kennie.base.project.R.anim.screen_zoom_out);
                     finish();
                 }
             });
@@ -42,7 +43,7 @@ public class LoadingActivity extends AppCompatActivity {
             handler = new Handler(Looper.getMainLooper());
             handler.postDelayed(() -> {
                 // startActivity(new Intent(LoadingActivity.this, MainActivity.class));
-                overridePendingTransition(R.anim.screen_zoom_in, R.anim.screen_zoom_out);
+                overridePendingTransition(com.kennie.base.project.R.anim.screen_zoom_in, com.kennie.base.project.R.anim.screen_zoom_out);
                 finish();
             }, 200);
         }

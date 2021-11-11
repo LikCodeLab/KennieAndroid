@@ -1,4 +1,4 @@
-package com.kennie.base.project.config;
+package com.kennie.example.project.config;
 
 import androidx.core.content.FileProvider;
 
