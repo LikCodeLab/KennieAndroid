@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".ui.SplashActivity">
 
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/iv_splash_lottie"
         android:layout_width="wrap_content"
