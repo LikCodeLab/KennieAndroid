@@ -34,7 +34,7 @@ public class LoadingActivity extends AppCompatActivity {
             UserPrivacyPolicyDialog.show(this, new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    SPUtils.putInt(Constants.IS_AGREE_PRIVATE, 1);
+                    SPUtils.setSetting(Constants.IS_AGREE_PRIVATE, 1);
                     startActivity(new Intent(LoadingActivity.this, SplashActivity.class));
                     overridePendingTransition(com.kennie.base.project.R.anim.screen_zoom_in, com.kennie.base.project.R.anim.screen_zoom_out);
                     finish();

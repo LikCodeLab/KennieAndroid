@@ -4,161 +4,273 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 
-import com.kennie.library.utils.app.App;
+import com.kennie.library.utils.app.UtilInit;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
-
+/**
+ * <pre>
+ *     author : kennie
+ *     time   : 2017/1/23
+ *     desc   : 配置存储相关工具类
+ * </pre>
+ */
 public class SPUtils {
 
-    private static final String CONFIG = "config";
+    /**
+     * > - **配置存储相关→[SPUtils.java][SPUtils]**
+     * ```
+     * init         : 初始化，设置存储文件名
+     * contains     : 判断键值是否存在
+     * setSetting   : 存储配置
+     * getString    : 读取字符串配置
+     * getBoolean   : 读取Boolean配置
+     * getInt       : 读取int配置
+     * getLong      : 读取long配置
+     * getFloat     : 读取float配置
+     * getStringSet : 读取Set<String>配置
+     * remove       : 删除配置
+     * clear        : 清空配置
+     * ```
+     */
+
+    private static final String SP_DEFAULT_FILE = "app_config"; // 存储文件名
+
+    private static String SP_FILE_NAME = SP_DEFAULT_FILE;
 
     /**
-     * 获取SharedPreferences实例对象
+     * 初始化，设置存储文件名
      *
-     * @param fileName
+     * @param sharedFileName 存储文件名
      */
-    private static SharedPreferences getSharedPreference(String fileName) {
-        return App.getInstance().getSharedPreferences(fileName, Context.MODE_PRIVATE);
+    public static void init(String sharedFileName) {
+        SP_FILE_NAME = sharedFileName;
     }
 
     /**
-     * 保存一个String类型的值！
+     * 获取SharedPreferences实例对象
      */
-    public static void putString(String key, String value) {
-        SharedPreferences.Editor editor = getSharedPreference(CONFIG).edit();
+    private static SharedPreferences getSharedPreferences() {
+        return UtilInit.getsApp().getSharedPreferences(SP_FILE_NAME, Context.MODE_PRIVATE);
+    }
+
+    /**
+     * 判断键值是否存在
+     *
+     * @param key 键值
+     * @return {@code true}:存在<br>{@code false}:不存在
+     */
+    public static boolean contains(String key) {
+        return getSharedPreferences().contains(key);
+    }
+
+    /**
+     * 存储字符串
+     *
+     * @param key   键值
+     * @param value 字符串
+     */
+    public static void setSetting(String key, String value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putString(key, value).apply();
     }
 
     /**
-     * 获取String的value
+     * 读取字符串
+     *
+     * @param key      键值
+     * @param defValue 默认返回字符串
+     * @return 字符串
      */
     public static String getString(String key, String defValue) {
-        SharedPreferences sharedPreference = getSharedPreference(CONFIG);
-        return sharedPreference.getString(key, defValue);
+        return getSharedPreferences().getString(key, defValue);
     }
 
     /**
-     * 保存一个Boolean类型的值！
+     * 读取字符串
+     *
+     * @param key 键值
+     * @return 字符串
      */
-    public static void putBoolean(String key, Boolean value) {
-        SharedPreferences.Editor editor = getSharedPreference(CONFIG).edit();
+    public static String getString(String key) {
+        return getString(key, null);
+    }
+
+    /**
+     * 存储布尔类型
+     *
+     * @param key   键值
+     * @param value boolean
+     */
+    public static void setSetting(String key, boolean value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putBoolean(key, value).apply();
     }
 
     /**
-     * 获取boolean的value
+     * 读取布尔类型
+     *
+     * @param key      键值
+     * @param defValue 默认返回值
+     * @return boolean
      */
-    public static boolean getBoolean(String key, Boolean defValue) {
-        SharedPreferences sharedPreference = getSharedPreference(CONFIG);
-        return sharedPreference.getBoolean(key, defValue);
+    public static boolean getBoolean(String key, boolean defValue) {
+        return getSharedPreferences().getBoolean(key, defValue);
     }
 
     /**
-     * 保存一个int类型的值！
+     * 读取布尔类型
+     *
+     * @param key 键值
+     * @return boolean
      */
-    public static void putInt(String key, int value) {
-        SharedPreferences.Editor editor = getSharedPreference(CONFIG).edit();
+    public static boolean getBoolean(String key) {
+        return getBoolean(key, false);
+    }
+
+    /**
+     * 存储int
+     *
+     * @param key   键值
+     * @param value int
+     */
+    public static void setSetting(String key, int value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putInt(key, value).apply();
     }
 
     /**
-     * 获取int的value
+     * 读取int
+     *
+     * @param key      键值
+     * @param defValue 默认返回值
+     * @return int
      */
     public static int getInt(String key, int defValue) {
-        SharedPreferences sharedPreference = getSharedPreference(CONFIG);
-        return sharedPreference.getInt(key, defValue);
+        return getSharedPreferences().getInt(key, defValue);
     }
 
     /**
-     * 保存一个float类型的值！
+     * 读取int
+     *
+     * @param key 键值
+     * @return int
      */
-    public static void putFloat(String fileName, String key, float value) {
-        SharedPreferences.Editor editor = getSharedPreference(fileName).edit();
-        editor.putFloat(key, value).apply();
+    public static int getInt(Context context, String key) {
+        return getInt(key, 0);
     }
 
     /**
-     * 获取float的value
+     * 存储long
+     *
+     * @param key   键值
+     * @param value long
      */
-    public static float getFloat(String key, Float defValue) {
-        SharedPreferences sharedPreference = getSharedPreference(CONFIG);
-        return sharedPreference.getFloat(key, defValue);
-    }
-
-    /**
-     * 保存一个long类型的值！
-     */
-    public static void putLong(String key, long value) {
-        SharedPreferences.Editor editor = getSharedPreference(CONFIG).edit();
+    public static void setSetting(String key, long value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.putLong(key, value).apply();
     }
 
     /**
-     * 获取long的value
+     * 读取long
+     *
+     * @param key      键值
+     * @param defValue 默认返回值
+     * @return long
      */
     public static long getLong(String key, long defValue) {
-        SharedPreferences sharedPreference = getSharedPreference(CONFIG);
-        return sharedPreference.getLong(key, defValue);
+        return getSharedPreferences().getLong(key, defValue);
     }
 
     /**
-     * 取出List<String>
+     * 读取long
      *
-     * @param key List<String> 对应的key
-     * @return List<String>
+     * @param key 键值
+     * @return long
      */
-    public static List<String> getStrListValue(String key) {
-        List<String> strList = new ArrayList<String>();
-        int size = getInt(key + "size", 0);
-        //Log.d("sp", "" + size);
-        for (int i = 0; i < size; i++) {
-            strList.add(getString(key + i, null));
-        }
-        return strList;
+    public static long getLong(String key) {
+        return getLong(key, 0);
     }
 
     /**
-     * 存储List<String>
+     * 存储float
      *
-     * @param key     List<String>对应的key
-     * @param strList 对应需要存储的List<String>
+     * @param key   键值
+     * @param value float
      */
-    public static void putStrListValue(String key, List<String> strList) {
-        if (null == strList) {
-            return;
-        }
-        // 保存之前先清理已经存在的数据，保证数据的唯一性
-        removeStrList(key);
-        int size = strList.size();
-        putInt(key + "size", size);
-        for (int i = 0; i < size; i++) {
-            putString(key + i, strList.get(i));
-        }
+    public static void setSetting(String key, float value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
+        editor.putFloat(key, value).apply();
     }
 
     /**
-     * 清空List<String>所有数据
+     * 读取float
      *
-     * @param key List<String>对应的key
+     * @param key      键值
+     * @param defValue 默认返回值
+     * @return float
      */
-    public static void removeStrList(String key) {
-        int size = getInt(key + "size", 0);
-        if (0 == size) {
-            return;
-        }
-        remove(key + "size");
-        for (int i = 0; i < size; i++) {
-            remove(key + i);
-        }
+    public static float getFloat(String key, float defValue) {
+        return getSharedPreferences().getFloat(key, defValue);
     }
 
     /**
-     * 清空对应key数据
+     * 读取float
+     *
+     * @param key 键值
+     * @return float
+     */
+    public static float getFloat(String key) {
+        return getSharedPreferences().getFloat(key, 0);
+    }
+
+    /**
+     * 存储Set<String>
+     *
+     * @param key   键值
+     * @param value Set<String>
+     */
+    public static void setSetting(String key, Set<String> value) {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
+        editor.putStringSet(key, value).apply();
+    }
+
+    /**
+     * 读取Set<String>
+     *
+     * @param key      键值
+     * @param defValue 默认返回值
+     * @return Set<String>
+     */
+    public static Set<String> getStringSet(String key, Set<String> defValue) {
+        return getSharedPreferences().getStringSet(key, defValue);
+    }
+
+    /**
+     * 读取Set<String>
+     *
+     * @param key 键值
+     * @return Set<String>
+     */
+    public static Set<String> getStringSet(String key) {
+        return getStringSet(key, null);
+    }
+
+    /**
+     * 删除配置
+     *
+     * @param key 键值
      */
     public static void remove(String key) {
-        SharedPreferences.Editor editor = getSharedPreference(CONFIG).edit();
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
         editor.remove(key).apply();
+    }
+
+    /**
+     * 清空配置
+     */
+    public static void clear() {
+        SharedPreferences.Editor editor = getSharedPreferences().edit();
+        editor.clear().apply();
     }
 }

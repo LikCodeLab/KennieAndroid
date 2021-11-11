@@ -26,6 +26,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
+    implementation depX.multidex
     implementation project(':base_project')
 
     // 图片加载框架：https://github.com/bumptech/glide

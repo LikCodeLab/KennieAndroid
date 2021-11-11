@@ -1,7 +1,7 @@
 package com.kennie.example.project.base
 
 import com.kennie.library.utils.ActivityManager
-import com.kennie.library.utils.app.App
+import com.kennie.base.project.App
 import com.tencent.mmkv.MMKV
 
 class AppApplication : App() {

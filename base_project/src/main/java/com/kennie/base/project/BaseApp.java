@@ -1,4 +1,4 @@
-package com.kennie.library.utils.app;
+package com.kennie.base.project;
 
 import android.app.Application;
 
@@ -9,9 +9,9 @@ import androidx.multidex.MultiDexApplication;
  * @author Kennie
  * @desc 描述
  */
-public abstract class BaseApp<BaseProjectApp extends BaseApp> extends MultiDexApplication {
+public abstract class BaseApp<ProjectApp extends BaseApp> extends MultiDexApplication {
 
-    public BaseProjectApp baseProjectApp;
+    public ProjectApp projectApp;
     private static Application instance;
 
     public static <App extends BaseApp> App getInstance(Class<App> appClass) {
@@ -23,8 +23,8 @@ public abstract class BaseApp<BaseProjectApp extends BaseApp> extends MultiDexAp
     @Override
     public void onCreate() {
         super.onCreate();
-        baseProjectApp = (BaseProjectApp) this;
-        instance = baseProjectApp;
+        projectApp = (ProjectApp) this;
+        instance = projectApp;
         init();
     }
 
@@ -51,6 +51,7 @@ public abstract class BaseApp<BaseProjectApp extends BaseApp> extends MultiDexAp
         if (instance == null) {
             return null;
         }
+
         return instance;
     }
 }
