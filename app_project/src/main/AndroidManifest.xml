@@ -64,6 +64,13 @@
             android:screenOrientation="portrait"
             android:theme="@style/Common_SplashTheme"/>
 
+        <!-- 首页 -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
     </application>
 
 </manifest>

@@ -10,5 +10,6 @@ dependencies {
     implementation depX.appcompat
     implementation depX.material
     implementation depX.multidex
-
+    // 腾讯 MMKV：https://github.com/Tencent/MMKV
+    api 'com.tencent:mmkv-static:1.2.10'
 }
