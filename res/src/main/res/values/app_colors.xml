@@ -35,14 +35,8 @@
 
 
     <!-- 分割线的颜色 -->
-    <color name="common_line_color">#ECECEC</color>
-    <!-- 矢量图标的颜色 -->
-    <color name="common_icon_color">#7C7C7C</color>
+    <color name="app_default_line">#ECECEC</color>
 
-    <!-- 对话框确认按钮的文本颜色 -->
-    <color name="common_confirm_text_color">#007AFF</color>
-    <!-- 对话框取消按钮的文本颜色 -->
-    <color name="common_cancel_text_color">#F44336</color>
 
     <!-- 通常用于按钮及修饰元素 -->
     <color name="app_green">#009688</color>
