@@ -14,7 +14,7 @@
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/dp_299" />
-            <solid android:color="@color/app_default_color_light_green" />
+            <solid android:color="@color/app_default_green_accent" />
         </shape>
     </item>
 
@@ -22,7 +22,7 @@
     <item android:state_focused="true">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/dp_299" />
-            <solid android:color="@color/app_default_color_light_green" />
+            <solid android:color="@color/app_default_green_accent" />
         </shape>
     </item>
 
@@ -30,7 +30,7 @@
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/dp_299" />
-            <solid android:color="@color/app_default_color_green" />
+            <solid android:color="@color/app_default_green_primary" />
         </shape>
     </item>
 
