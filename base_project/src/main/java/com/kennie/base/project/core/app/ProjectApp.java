@@ -1,6 +1,5 @@
-package com.kennie.base.project;
+package com.kennie.base.project.core.app;
 
-import com.kennie.base.project.core.app.BaseApp;
 
 public class ProjectApp extends BaseApp {
     @Override

@@ -1,4 +1,4 @@
-package com.kennie.base.project.core
+package com.kennie.base.project.config
 
 /**
  * 固定参数

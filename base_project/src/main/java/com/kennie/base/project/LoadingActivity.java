@@ -9,7 +9,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.kennie.base.project.core.Constants;
+import com.kennie.base.project.config.Constants;
 import com.kennie.base.project.utils.SPUtils;
 
 /**
