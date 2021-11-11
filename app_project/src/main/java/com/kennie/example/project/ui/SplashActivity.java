@@ -48,4 +48,9 @@ public class SplashActivity extends AppActivity {
             mVersionView.setVisibility(View.INVISIBLE);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        //禁用返回键
+    }
 }
