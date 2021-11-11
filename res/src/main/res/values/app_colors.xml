@@ -20,7 +20,7 @@
     <!-- 应用的主色 Toolbar 默认使用该颜色 -->
     <color name="app_default_primary">@color/white</color>
     <!-- 应用的主要暗色调，状态栏默认使用该颜色 -->
-    <color name="app_default_primary_dark">@color/app_black</color>
+    <color name="app_default_primary_dark">@color/app_color_black</color>
     <!-- 应用的强调色，CheckBox RadioButton Switch 等一般控件的选中效果默认采用该颜色 -->
     <color name="app_default_accent">#5A8DDF</color>
     <!-- 默认文本颜色，Button、TextView 的文字颜色 -->
@@ -39,13 +39,13 @@
 
 
     <!-- 通常用于按钮及修饰元素 -->
-    <color name="app_green">#009688</color>
+    <color name="app_color_green">#009688</color>
     <!-- 一般用于选中状态 -->
-    <color name="app_light_green">#5FB878</color>
+    <color name="app_color_light_green">#5FB878</color>
     <!-- 通常用于导航 -->
-    <color name="app_black">#393D49</color>
+    <color name="app_color_black">#393D49</color>
     <!-- 比较适合一些鲜艳色系的页面 -->
-    <color name="app_blue">#1E9FFF</color>
+    <color name="app_color_blue">#1E9FFF</color>
     <!-- 暖色系，一般用于提示性元素 -->
     <color name="app_orange">#F7B824</color>
     <!-- 比较引人注意的颜色 -->
