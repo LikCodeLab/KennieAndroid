@@ -8,15 +8,44 @@
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="false"
         android:usesCleartextTraffic="true"
-        tools:replace="android:allowBackup"
-        tools:targetApi="m">
+        tools:replace="android:allowBackup,android:supportsRtl"
+        tools:targetApi="n">
+
+        <!-- 表示当前已经适配了分区存储 -->
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+
+        <!-- 适配 Android 7.0 文件意图 -->
+        <provider
+            android:name="com.kennie.base.project.BaseFileProvider"
+            android:authorities="${applicationId}.baseFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 隐私政策等待页 -->
         <activity
             android:name=".LoadingActivity"
             android:exported="true"
+            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme"
-            tools:ignore="LockedOrientationActivity">
+            tools:ignore="LockedOrientationActivity" >
+            <!-- 程序入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
     </application>
