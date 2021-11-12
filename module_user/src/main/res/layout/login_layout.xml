@@ -38,9 +38,7 @@
             android:hint="@string/login_phone_hint"
             android:inputType="phone"
             android:minHeight="@dimen/dp_48"
-            android:singleLine="true"
-            android:textColorHighlight="@color/app_default_text_hint"
-            android:textColorHint="@color/app_default_text_hint" />
+            android:singleLine="true"/>
 
 
         <com.kennie.library.views.widget.PasswordEditText
@@ -53,9 +51,7 @@
             android:inputType="textPassword"
             android:maxLength="20"
             android:minHeight="@dimen/dp_48"
-            android:singleLine="true"
-            android:textColorHighlight="@color/app_default_text_hint"
-            android:textColorHint="@color/app_default_text_hint" />
+            android:singleLine="true"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -102,7 +98,7 @@
             android:orientation="horizontal">
 
             <View
-                style="@style/Common_HorizontalLineStyle"
+                style="@style/Line_HorizontalStyle"
                 android:layout_width="@dimen/dp_60"
                 android:layout_weight="1" />
 
@@ -114,7 +110,7 @@
                 android:textColor="@color/black50" />
 
             <View
-                style="@style/Common_HorizontalLineStyle"
+                style="@style/Line_HorizontalStyle"
                 android:layout_width="@dimen/dp_60"
                 android:layout_weight="1" />
 

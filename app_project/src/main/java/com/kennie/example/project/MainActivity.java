@@ -25,7 +25,7 @@ public class MainActivity extends AppActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.forget_layout;
     }
 
     @Override

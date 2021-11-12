@@ -64,7 +64,7 @@
                         android:singleLine="true" />
 
                     <View
-                        style="@style/Common_HorizontalLineStyle"
+                        style="@style/Line_HorizontalStyle"
                         android:layout_gravity="bottom" />
                 </FrameLayout>
 

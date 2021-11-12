@@ -29,6 +29,9 @@ dependencies {
     implementation depX.multidex
     implementation project(':base_project')
 
+    implementation project(':module_user')
+
+
     // 图片加载框架：https://github.com/bumptech/glide
     // 官方使用文档：https://github.com/Muyangmin/glide-docs-cn
     implementation 'com.github.bumptech.glide:glide:4.12.0'

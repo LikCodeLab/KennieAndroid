@@ -70,4 +70,8 @@
     <color name="app_default_green_primary_dark">#02c684</color>
     <color name="app_default_green_accent">#2ad181</color>
 
+
+    <!-- 矢量图标的颜色 -->
+    <color name="app_default_icon_color">#7C7C7C</color>
+
 </resources>

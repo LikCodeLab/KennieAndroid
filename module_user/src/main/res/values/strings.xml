@@ -2,7 +2,7 @@
 <resources>
     <!-- 登录界面 -->
     <string name="login_text">登录</string>
-    <string name="login_phone_hint">请输入手机号</string>
+    <string name="login_phone_hint">请输入手机号码</string>
     <string name="login_password_hint">请输入密码</string>
     <string name="login_register">注册</string>
     <string name="login_forget">忘记密码？</string>
@@ -18,5 +18,11 @@
     <string name="register_password_hint1">设置6&#8211;18位登录密码</string>
     <string name="register_password_hint2">请再次输入密码</string>
     <string name="register_password_input_error">两次密码输入不一致，请重新输入</string>
+
+    <!-- 设置界面 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_language_switchover">语言切换</string>
+    <string name="setting_language_simple">简体中文</string>
+    <string name="setting_language_complex">繁体中文</string>
 
 </resources>
