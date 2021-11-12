@@ -1,0 +1,14 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply from: "${rootDir}/configs/tools/gradle/library.gradle"
+
+dependencies {
+    // https://github.com/lygttpod/SuperTextView
+    implementation depK.core
+    implementation depX.appcompat
+    implementation depX.material
+    implementation project(':res')
+}
