@@ -25,18 +25,11 @@ public class MainActivity extends AppActivity {
 
     @Override
     public int getLayoutId() {
-        return R.layout.login_layout_one;
+        return R.layout.activity_main;
     }
 
     @Override
     public void initView() {
-
-        findViewById(R.id.btn_login_commit).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ExampleViewActivity.start(MainActivity.this);
-            }
-        });
 
     }
 

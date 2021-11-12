@@ -7,13 +7,9 @@ apply from: "${rootDir}/configs/tools/gradle/library.gradle"
 
 dependencies {
     implementation depK.core
-    implementation depX.multidex
     implementation depX.appcompat
     implementation depX.material
-    implementation depX.swiperefreshlayout
     api project(':res')
     api project(':library_views')
     api project(':library_utils')
-
-
 }
