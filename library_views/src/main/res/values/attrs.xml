@@ -24,4 +24,47 @@
     </declare-styleable>
 
 
+    <declare-styleable name="SimpleSettingItem">
+
+        <attr name="z_setting_titleText" format="string" />
+        <attr name="z_setting_titleTextSize" format="dimension" />
+        <attr name="z_setting_titleTextColor" format="color" />
+
+        <attr name="z_setting_leftIcon" format="reference" />
+        <attr name="z_setting_leftIconTint" format="color" />
+        <attr name="z_setting_rightIcon" format="reference" />
+        <attr name="z_setting_rightIconTint" format="color" />
+
+        <attr name="z_setting_background" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ZSettingItem">
+
+        <attr name="z_setting_infoText" format="string" />
+        <attr name="z_setting_infoTextSize" format="dimension" />
+        <attr name="z_setting_infoTextColor" format="color" />
+
+        <attr name="z_setting_rightText" format="string" />
+        <attr name="z_setting_rightTextSize" format="dimension" />
+        <attr name="z_setting_rightTextColor" format="color" />
+
+        <attr name="z_setting_showUnderLine" format="boolean" />
+        <attr name="z_setting_showRightBtn" format="boolean" />
+        <attr name="z_setting_showRightText" format="boolean" />
+
+        <attr name="z_setting_showRightArrow" format="boolean" />
+        <attr name="z_setting_arrowIcon" format="reference" />
+        <attr name="z_setting_arrowIconTint" format="color" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="CheckableSettingItem">
+
+        <attr name="z_setting_checkable_normalColor" format="color" />
+        <attr name="z_setting_checkable_checkedColor" format="color" />
+
+    </declare-styleable>
+
 </resources>

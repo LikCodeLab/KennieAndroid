@@ -11,6 +11,7 @@ dependencies {
     implementation depK.core
     implementation depX.appcompat
     implementation depX.material
+    implementation 'com.github.kennielab:KennieViewSwitcher:1.0.1'
     implementation project(':res')
 
     // 动画解析库：https://github.com/airbnb/lottie-android
