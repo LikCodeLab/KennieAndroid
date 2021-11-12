@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="应用设置" />
+
+        <View style="@style/Line_HorizontalStyle" />
+
+
+        <com.kennie.library.views.setting.SwitchSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_infoText="开启该选项将进入省流模式"
+            app:z_setting_leftIcon="@mipmap/app_launcher_round"
+            app:z_setting_titleText="省流模式" />
+
+
+        <com.kennie.library.views.setting.SwitchSettingItem
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_infoText="开启该选项将进入省流模式"
+            app:z_setting_leftIcon="@mipmap/app_launcher_round"
+            app:z_setting_titleText="省流模式" />
+
+        <com.kennie.library.views.setting.SwitchSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_titleText="夜间模式" />
+
+
+        <com.kennie.library.views.setting.CommonSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_leftIcon="@mipmap/app_launcher"
+            app:z_setting_rightIconTint="@color/app_red"
+            app:z_setting_showRightBtn="true"
+            app:z_setting_titleText="Title" />
+
+        <com.kennie.library.views.setting.CommonSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_infoText="/storage/emulated/\n\n\n0/Download/"
+            app:z_setting_titleText="下载路径" />
+
+        <com.kennie.library.views.setting.CommonSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:z_setting_rightIconTint="#000000"
+            app:z_setting_rightText="v 1.0.0"
+            app:z_setting_titleText="检查更新" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

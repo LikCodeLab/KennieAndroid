@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnAc
         switch (id) {
             case 0:
                 // 演示
-                FunctionActivity.open(this);
+                SettingItemActivity.start(this);
                 break;
         }
     }
